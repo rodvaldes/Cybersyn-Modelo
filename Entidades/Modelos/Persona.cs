@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace Cybersyn.Modelo
 {
     public class Persona
     { 
@@ -13,12 +13,16 @@ namespace Entidades
         public string SegundoNombre { get; set; }
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
-       // NullableDateTime FechaNacimiento{get; set;}
+        DateTime FechaNacimiento{get; set;}
         Int32 Edad{get; set;}
         string Nacionalidad{get; set;}
-        string Sexo{get; set;}     
-       
+        string Sexo{get; set;}
 
+
+        public string ObtenerNombreCompleto()
+        {
+            return this.PrimerNombre + " " + this.SegundoNombre + " " + this.ApellidoPaterno + " " + this.ApellidoMaterno;
+        }
     }
 }
 

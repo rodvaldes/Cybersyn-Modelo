@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Cybersyn.Modelo;
 
 namespace EntidadesTests
 {
@@ -12,7 +13,7 @@ namespace EntidadesTests
             Usuario usuario = new Usuario();
             Assert.IsNotNull(usuario);
         }
-        [TestMethod]
-        public void 
+       // [TestMethod]
+    //    public void 
     }
 }
